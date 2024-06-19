@@ -1,0 +1,51 @@
+.header{
+    position: relative;
+}
+.text{
+    display:flex;
+    align-items: center;
+}
+.header .toggle-nav-btn{
+    position: absolute;
+    right: 1rem;
+    display:none;
+}
+.header input[type=checkbox]{
+    display:none;
+}
+.header .toggle-nav{
+    background: red;
+    padding: 1rem;
+}
+.header .toggle-nav:checked ~ .navigation{
+    transform: scale(1,1);
+}
+.header .toggle-nav:checked ~ .navigation a{
+    opacity: 1;
+}
+@media screen and (max-width: 800px){
+    .header{
+        align-items: unset;
+        flex-direction: column;
+    }
+    .header .toggle-nav-btn{
+        display: block;
+    }
+    .header .navigation{
+        z-index: 999;
+        position: absolute;
+        transform-origin: top;
+        transform: scale(1,0);
+        flex-direction: column;
+        background: #112D4E;
+        top: 5rem;
+        right: 0;
+        width: 100%;
+        padding: 1rem;
+        transition: transform 300ms ease-in-out;
+    }
+    .header .navigation a{
+        color: white;
+        opacity: 0;
+    }
+}

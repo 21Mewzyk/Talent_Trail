@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:wght@200;400;500&display=swap');
+*:not(ul,li){
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: 0;
+    cursor: pointer;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    background:white;
+}
+.header_logo{
+    display: flex;
+    align-items: center;
+    color:#112D4E;
+    gap: .5rem;
+}
+.header_logo img{
+    width: 50px;
+    height: 50px;
+}
+.header_logo p{
+    font-size: 1.2rem;
+    font-weight:500;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navigation > a{
+    color: #112D4E;
+    font-size: 1.1rem;
+}
+.navigation > a:hover{
+    color: rgb(163, 163, 163);
+}
+.navigation > a.nav_a{
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    background: #112D4E;
+    color: white;
+}
+.navigation > a.nav_a:hover{
+    background: rgb(57, 158, 158);
+}
+.main .body{
+    background: #F4F5FF;
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.body .box{
+    background:white;
+    border-radius: .3rem;
+    padding: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.body .box .box_header .box_header_title{
+    font-size: 2rem;
+}
+.body .box .box_header .box_header_sub{
+    display: flex;
+    color: rgb(163, 163, 163);
+    gap: 1rem;
+}
+.body .box .box_header .box_header_sub{
+    display: flex;
+    color: rgb(163, 163, 163);
+    gap: 1rem;
+}
+.body .box .box_body{
+    padding: 0rem;
+}
+.body .job_information .box_button{
+    display: flex;
+    gap: 1rem;
+}
+.body .job_information .box_button .btn_applynow{
+    background: #673DE6;
+    color: white;
+    padding: 1rem;
+    border-radius: 3px;
+}
+.body .job_information .box_button .btn_applynow:hover{
+    background: #8060df;
+}
+.body .job_information .box_button .btn_applynow i{
+    margin-right: .5rem;
+}
+.body .job_information{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.not_verified{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.not_verified a{
+    margin-top: 1rem;
+    background: #673DE6;
+    color: white;
+    padding: 1rem;
+    border-radius: 3px;
+    width: 300px;
+    text-align: center;
+}
+.not_verified a:hover{
+    background: #8060df;
+}
+.box_success{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box_success a{
+    margin-top: 1rem;
+    background: #673DE6;
+    color: white;
+    padding: 1rem;
+    border-radius: 3px;
+    width: 300px;
+    text-align: center;
+}
+.box_success a:hover{
+    background: #8060df;
+}
+.field{
+    display: flex;
+    flex-direction: column;
+}
+.field .tb{
+    padding: .5rem;
+    outline: none;
+}
+.field .textarea{
+    resize: none;
+    height: 100px;
+}
+.form button{
+    margin-top: 1rem;
+    background: #673DE6;
+    color: white;
+    padding: 1rem;
+    border-radius: 3px;
+    width: 300px;
+    text-align: center;
+}
+.form button:hover{
+    background: #8060df;
+}

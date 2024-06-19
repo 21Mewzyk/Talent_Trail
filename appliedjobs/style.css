@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:wght@200;400;500&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+}
+.main{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+}
+.header_logo{
+    display: flex;
+    align-items: center;
+    color: teal;
+    gap: .5rem;
+}
+.header_logo img{
+    width: 50px;
+    height: 50px;
+}
+.header_logo p{
+    font-size: 1.2rem;
+    font-weight:500;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navigation > a{
+    color: teal;
+    font-size: 1.1rem;
+}
+.navigation > a:hover{
+    color: rgb(163, 163, 163);
+}
+.navigation > a.nav_a{
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    background: teal;
+    color: white;
+}
+.navigation > a.nav_a:hover{
+    background: rgb(57, 158, 158);
+}
+.body{
+    flex: 1;
+    background: #F4F5FF;
+    display: flex;
+}
+.box{
+    padding: 1rem;
+    border-radius: 5px;
+    background: white;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 0;
+    background: white;
+    width: 300px;
+    border-right: 1px rgb(204, 204, 204) solid;
+}
+.sidebar a{
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(160, 160, 160);
+    border-radius: 0 1rem 1rem 0;
+}
+.sidebar a:hover{
+    color: #623ADA;
+    background: #F2F3F6;
+}
+.sidebar a.active{
+    color: #623ADA;
+    background: #EBE4FF;
+}
+.showcase{
+    flex: 1;
+    position: relative;
+}
+.showcase .content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+}
+.t1{
+    margin-bottom: 2rem;
+}
+.container{
+    background: white;
+    border-radius: .5rem .5rem 0 0;
+    border: 1px rgb(204, 204, 204) solid;
+}
+.container .container_title{
+    color: #623ADA;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+}
+.container .container_body{
+    background: white;
+    padding: 1rem;
+}
+.container .container_body .msg{
+    color: white;
+    background: #EB4747;
+    border: #ca5f5f 1px solid;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+.container .container_body .msg a{
+    color: white;
+    text-decoration: underline;
+}
+.button_container{
+    display: flex;
+    gap: 1rem;
+}
+.button_container button{
+    width: 100%;
+}
+ form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+form .field{
+    display: flex;
+}
+form .field label{
+    min-width: 130px;
+    font-size: .9rem;
+    margin-top: .5rem;
+    color: #8d889c;
+}
+ form .field input,textarea,select{
+    width: 100%;
+    outline: none;
+    padding: .5rem;
+    border: 1px rgb(204, 204, 204) solid;
+}
+ form .field input:focus,textarea:focus,select:focus{
+    border-color: #623ADA;
+}
+ form .field textarea{
+    resize: none;
+    height: 100px;
+}
+form .btn_submit{
+    margin-top: 1rem;
+}
+ form .button{
+    cursor: pointer;
+    height: 50px;
+    color: white;
+    background: #673DE6;
+    border-radius: .5rem;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form .button_container .button{
+    flex: 1;
+}
+ form .button:hover{
+    background: #623ADA;
+}
+.company_logo_preview{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    border-radius: 100%;
+    align-items: center;
+}
+input[type=file]{
+    display: none;
+}
+.btn_upload_picture{
+    width: 100%;
+    font-size: 3rem;
+    color: #673DE6 !important;
+    cursor: pointer;
+    height: 50px;
+    border:  1px dashed #673DE6;
+    
+    border-radius: .5rem;
+    text-align: center;
+    display: flex;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.btn_upload_picture:hover{
+    color: white !important;
+    background: #673DE6;
+}
+
+.client_menu { 
+    display: none;
+ }
+
+@media only screen and (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+
+    .btn_upload_picture {
+     font-size: .8rem; 
+    }
+    .image_center_body {
+        text-align: center;
+    }
+
+
+    .client_menu { 
+        display: block;
+     }
+
+}

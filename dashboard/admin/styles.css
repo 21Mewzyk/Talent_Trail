@@ -1,0 +1,896 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:wght@200;400;500&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+
+}
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+    background: #F9F7F7;
+    
+    border-bottom: 1px rgb(204, 204, 204) solid;
+}
+.header .box{
+    display: flex;
+    gap: 3rem;
+}
+.header_logo{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: .5rem;
+}
+.header span{
+    width: 1px;
+    background: rgb(160, 160, 160);
+}
+.header_logo img{
+    width: 50px;
+    height: 50px;
+}
+.header_logo p{
+    font-size: 1.2rem;
+    font-weight:500;
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navigation > a i{
+    margin-right: .3rem;
+}
+.navigation > a{
+    color: white;
+    font-size: 1.1rem;
+}
+.navigation > a:hover{
+    color: rgb(163, 163, 163);
+}
+.navigation > a.nav_a{
+    border-radius: 2rem;
+    padding: .5rem 2rem;
+    background: teal;
+    color: white;
+}
+.navigation > a.nav_a:hover{
+    background: rgb(57, 158, 158);
+}
+.navigation > button{
+    color: white;
+    background: none;
+    font-size: 1.2rem;
+}
+.navigation > button:hover{
+    color: rgb(163, 163, 163);
+}
+.body{
+    flex: 1;
+    position: relative;
+    display: flex;
+    background: #F4F5FF;
+}
+.body .profile_box{
+    position: absolute;
+    right: .9rem;
+    top: .9rem;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 300px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    border-radius: .2rem;
+    z-index: 100;
+}
+.body .profile_box .profile_box_header{
+    background: #112D4E;
+    color: white;
+    padding: 1rem;
+    border-radius: .2rem .2rem 0 0;
+}
+.body .profile_box .profile_box_header .profile_name{
+    font-weight:500;
+}
+.body .profile_box .profile_box_header .profile_email{
+    font-size: .8rem;
+}
+.body .profile_box .profile_box_body{
+    padding: .5rem;
+}
+.body .profile_box .profile_box_footer{
+    border-radius: 0 0 .2rem .2rem;
+    padding: 0 .5rem .5rem .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.body .profile_box .profile_box_footer button{
+    background: white;
+    color: #673DE6;
+    text-align: center;
+    width: 100%;
+    padding: .3rem .3rem;
+    border: 1px rgb(204, 204, 204) solid;
+}
+.body .profile_box .profile_box_footer button:hover{
+    background: #DFD8F2;
+}
+.body .profile_box .profile_box_footer a{
+    background: white;
+    color: #673DE6;
+    text-align: center;
+    width: 100%;
+    padding: .3rem .3rem;
+    border: 1px rgb(204, 204, 204) solid;
+}
+.body .profile_box .profile_box_footer a:hover{
+    background: #DFD8F2;
+}
+/* body page dashboard */
+#body_page_dashboard{
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#body_page_dashboard .dashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+#body_page_dashboard .dashboard .box{
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    background: white;
+    padding: 1rem;
+    gap: 1rem;
+    border: 1px rgb(204, 204, 204) solid;
+}
+#body_page_dashboard .dashboard .box .box_name{
+    flex: 1;
+}
+#body_page_dashboard .dashboard .box a{
+    border-radius: .3rem;
+    background: #673DE6;
+    color: white;
+    padding: .5rem 0;
+    width: 100px;
+    text-align: center;
+}
+#body_page_dashboard .dashboard .box a:hover{
+    background: #623ADA;
+}
+#body_page_hire{
+    display: flex;
+}
+#body_page_hire .sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 0;
+    background: white;
+    width: 300px;
+    border-right: 1px rgb(204, 204, 204) solid;
+}
+#body_page_hire .sidebar a{
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(160, 160, 160);
+    border-radius: 0 1rem 1rem 0;
+}
+#body_page_hire .sidebar a:hover{
+    color: #623ADA;
+    background: #F2F3F6;
+}
+#body_page_hire .sidebar a.active{
+    color: #623ADA;
+    background: #EBE4FF;
+}
+#body_page_hire .showcase{
+    flex: 1;
+    padding: 1rem;
+}
+
+#showcase_sub_postajob{
+    display: flex;
+    flex-direction: column;
+}
+#showcase_sub_postajob .t1{
+    margin-bottom: 2rem;
+}
+#showcase_sub_postajob .container{
+    background: white;
+    border-radius: .5rem;
+    border: 1px rgb(204, 204, 204) solid;
+}
+#showcase_sub_postajob .container .container_title{
+    color: #623ADA;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+}
+#showcase_sub_postajob .container .container_body{
+    padding: 1rem;
+}
+#showcase_sub_postajob form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+#showcase_sub_postajob form .field{
+    display: flex;
+    flex-direction: column;
+}
+#showcase_sub_postajob form .field input,textarea,select{
+    outline: none;
+    padding: .5rem;
+    border: 1px rgb(204, 204, 204) solid;
+}
+#showcase_sub_postajob form .field input:focus,textarea:focus,select:focus{
+    border-color: #623ADA;
+}
+#showcase_sub_postajob form .field textarea{
+    resize: none;
+    height: 200px;
+}
+#showcase_sub_postajob form .btn_submit{
+    margin-top: 1rem;
+    height: 50px;
+    color: white;
+    background: #673DE6;
+    border-radius: .5rem;
+}
+#showcase_sub_postajob form .btn_submit:hover{
+    background: #623ADA;
+}
+#showcase_sub_postajob .btn_delete_job{
+    width: 100%;
+    margin-top: .5rem;
+    height: 50px;
+    color: white;
+    background: #FF5876;
+    border-radius: .5rem;
+}
+#showcase_sub_postajob .btn_delete_job:hover{
+    background: #E26178;
+}
+#showcase_sub_jobs{
+    display: flex;
+    flex-direction: column;
+}
+#showcase_sub_jobs .t1{
+    margin-bottom: 2rem;
+}
+#showcase_sub_jobs .container{
+    background: white;
+    border-radius: .5rem .5rem 0 0;
+    border: 1px rgb(204, 204, 204) solid;
+}
+#showcase_sub_jobs .container .container_title{
+    color: #623ADA;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+}
+#showcase_sub_jobs .container .container_body{
+    background: white;
+}
+#showcase_sub_jobs .container .container_body .showcase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#showcase_sub_jobs .container .container_body .box{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) dashed;
+}
+#showcase_sub_jobs .container .container_body .box:hover{
+    color: teal;
+    background: #f3f3f3;
+}
+#showcase_sub_jobs .container .container_body .box:last-child{
+    border-bottom: none;
+}
+#showcase_sub_jobs .container .container_body .box .text{
+    flex: 1;
+}
+#showcase_sub_jobs .container .container_body .box .text .name{
+    font-size: 1.5rem;
+}
+#showcase_sub_jobs .container .container_body .box .text .salary_range{
+    font-size: 1.2rem;
+}
+#showcase_sub_jobs .container .container_body .box .text .posted_at{
+    font-size: 1rem;
+}
+#showcase_sub_jobs .container .container_body .box i{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+/* showcase_sub_applicants */
+#showcase_sub_applicants{
+    display: flex;
+    flex-direction: column;
+}
+#showcase_sub_applicants .t1{
+    margin-bottom: 2rem;
+}
+#showcase_sub_applicants .container{
+    background: white;
+    border-radius: .5rem .5rem 0 0;
+    border: 1px rgb(204, 204, 204) solid;
+}
+#showcase_sub_applicants .container .container_title{
+    color: #623ADA;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+    display: flex;
+    justify-content: space-between;
+}
+#showcase_sub_applicants .container .container_title .filter{
+    display:flex;
+    gap: .5rem;
+}
+#showcase_sub_applicants .container .container_title .filter a{
+    text-decoration: none;
+    color: black;
+}
+#showcase_sub_applicants .container .container_title .filter a:hover{
+    color: #623ADA;
+}
+#showcase_sub_applicants .container .container_title .filter a.active{
+    color: #623ADA;
+}
+#showcase_sub_applicants .container .container_body{
+    background: white;
+}
+#showcase_sub_applicants .container .container_body .showcase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#showcase_sub_applicants .container .container_body .box{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    padding: 1rem;
+    gap: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) dashed;
+}
+#showcase_sub_applicants .container .container_body .box:last-child{
+    border-bottom: none;
+}
+#showcase_sub_applicants .container .container_body .box .box_buttons{
+    display: flex;
+    gap: .5rem;
+}
+#showcase_sub_applicants .container .container_body .box .box_buttons .button{
+    background: #623ADA;
+    color: white;
+    padding: 1rem 1.5rem;
+    font-size: .9rem;
+    border-radius: 5px;
+}
+#showcase_sub_applicants .container .container_body .box .box_buttons .button:hover{
+    background: #8060df;
+}
+#showcase_sub_applicants .container .container_body .box .box_buttons .button:disabled{
+    cursor: no-drop;
+    background: grey;
+}
+#showcase_sub_applicants .container .container_body .box .box_buttons .button i{
+    margin-right: 1rem;
+}
+
+#body_page_profile{
+    display: flex;
+}
+#body_page_profile .sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 0;
+    background: white;
+    width: 300px;
+    border-right: 1px rgb(204, 204, 204) solid;
+}
+#body_page_profile .sidebar a{
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(160, 160, 160);
+    border-radius: 0 1rem 1rem 0;
+}
+#body_page_profile .sidebar a:hover{
+    color: #623ADA;
+    background: #F2F3F6;
+}
+#body_page_profile .sidebar a.active{
+    color: #623ADA;
+    background: #EBE4FF;
+}
+#body_page_profile .content{
+    flex: 1;
+    position: relative;
+}
+#body_page_profile .content .showcase{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    overflow-y: auto;
+}
+#body_page_profile .content .showcase .container{
+    background: white;
+    border-radius: .5rem .5rem 0 0;
+    border: 1px rgb(204, 204, 204) solid;
+}
+#body_page_profile .content .showcase .container .container_title{
+    color: #623ADA;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+}
+#body_page_profile .content .showcase .container .container_body{
+    background: white;
+    padding: 1rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+form .field{
+    display: flex;
+}
+form .field label{
+    min-width: 130px;
+    font-size: .9rem;
+    margin-top: .5rem;
+    color: #8d889c;
+}
+ form .field input,textarea,select{
+    width: 100%;
+    outline: none;
+    padding: .5rem;
+    border: 1px rgb(204, 204, 204) solid;
+}
+ form .field input:focus,textarea:focus,select:focus{
+    border-color: #623ADA;
+}
+ form .field textarea{
+    resize: none;
+    height: 100px;
+}
+form .btn_submit{
+    margin-top: 1rem;
+}
+ form .button{
+    cursor: pointer;
+    height: 50px;
+    color: white;
+    background: #673DE6;
+    border-radius: .5rem;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form .button_container .button{
+    flex: 1;
+}
+ form .button:hover{
+    background: #623ADA;
+}
+#showcase_sub_company{
+    display: flex;
+    flex-direction: column;
+}
+#showcase_sub_company .t1{
+    margin-bottom: 2rem;
+}
+#showcase_sub_company .container{
+    background: white;
+    border-radius: .5rem .5rem 0 0;
+    border: 1px rgb(204, 204, 204) solid;
+}
+#showcase_sub_company .container .container_title{
+    color: #623ADA;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+    display: flex;
+    justify-content: space-between;
+}
+#showcase_sub_company .container .container_title .filter{
+    display:flex;
+    gap: .5rem;
+}
+#showcase_sub_company .container .container_title .filter a{
+    text-decoration: none;
+    color: black;
+}
+#showcase_sub_company .container .container_title .filter a:hover{
+    color: #623ADA;
+}
+#showcase_sub_company .container .container_title .filter a.active{
+    color: #623ADA;
+}
+#showcase_sub_company .container .container_body{
+    background: white;
+}
+#showcase_sub_company .container .container_body .showcase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#showcase_sub_company .container .container_body .box{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) dashed;
+}
+#showcase_sub_company .container .container_body .box:hover{
+    color: teal;
+    background: #f3f3f3;
+}
+#showcase_sub_company .container .container_body .box:last-child{
+    border-bottom: none;
+}
+#showcase_sub_company .container .container_body .box .text{
+    flex: 1;
+}
+#showcase_sub_company .container .container_body .box .text .name{
+    font-size: 1.5rem;
+}
+#showcase_sub_company .container .container_body .box .text .salary_range{
+    font-size: 1.2rem;
+}
+#showcase_sub_company .container .container_body .box .text .posted_at{
+    font-size: 1rem;
+}
+#showcase_sub_company .container .container_body .box i{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+#showcase_sub_company .btn_delete{
+    width: 100%;
+    margin-top: .5rem;
+    height: 50px;
+    color: white;
+    background: #FF5876;
+    border-radius: .5rem;
+}
+#showcase_sub_company .btn_delete:hover{
+    background: #E26178;
+}
+
+#body_page_accounts{
+    display: flex;
+}
+#body_page_accounts .sidebar{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 1rem 0;
+    background: white;
+    width: 300px;
+    border-right: 1px rgb(204, 204, 204) solid;
+}
+#body_page_accounts .sidebar a{
+    padding: 1rem 1rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgb(160, 160, 160);
+    border-radius: 0 1rem 1rem 0;
+}
+#body_page_accounts .sidebar a:hover{
+    color: #623ADA;
+    background: #F2F3F6;
+}
+#body_page_accounts .sidebar a.active{
+    color: #623ADA;
+    background: #EBE4FF;
+}
+#body_page_accounts .content{
+    flex: 1;
+    padding: 1rem;
+}
+
+#showcase_sub_list{
+    display: flex;
+    flex-direction: column;
+}
+#showcase_sub_list .t1{
+    margin-bottom: 2rem;
+}
+#showcase_sub_list .container{
+    background: white;
+    border-radius: .5rem .5rem 0 0;
+    border: 1px rgb(204, 204, 204) solid;
+}
+#showcase_sub_list .container .container_title{
+    color: #623ADA;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+    display: flex;
+    justify-content: space-between;
+}
+#showcase_sub_list .container .container_title .filter{
+    display:flex;
+    gap: .5rem;
+}
+#showcase_sub_list .container .container_title .filter a{
+    text-decoration: none;
+    color: black;
+}
+#showcase_sub_list .container .container_title .filter a:hover{
+    color: #623ADA;
+}
+#showcase_sub_list .container .container_title .filter a.active{
+    color: #623ADA;
+}
+#showcase_sub_list .container .container_body{
+    background: white;
+}
+#showcase_sub_list .container .container_body .showcase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#showcase_sub_list .container .container_body .box{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) dashed;
+}
+#showcase_sub_list .container .container_body .box:last-child{
+    border-bottom: none;
+}
+#showcase_sub_list .container .container_body .box .text{
+    flex: 1;
+}
+#showcase_sub_list .container .container_body .box .text .name{
+    font-size: 1.5rem;
+}
+#showcase_sub_list .container .container_body .box .text .salary_range{
+    font-size: 1.2rem;
+}
+#showcase_sub_list .container .container_body .box .text .posted_at{
+    font-size: 1rem;
+}
+#showcase_sub_list .container .container_body .box i{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+#showcase_sub_list .btn_delete{
+    width: 100%;
+    margin-top: .5rem;
+    height: 50px;
+    color: white;
+    background: #FF5876;
+    border-radius: .5rem;
+}
+#showcase_sub_list .btn_delete:hover{
+    background: #E26178;
+}
+
+
+
+#showcase_sub_pending{
+    display: flex;
+    flex-direction: column;
+}
+#showcase_sub_pending .t1{
+    margin-bottom: 2rem;
+}
+#showcase_sub_pending .container{
+    background: white;
+    border-radius: .5rem .5rem 0 0;
+    border: 1px rgb(204, 204, 204) solid;
+}
+#showcase_sub_pending .container .container_title{
+    color: #623ADA;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) solid;
+    display: flex;
+    justify-content: space-between;
+}
+#showcase_sub_pending .container .container_title .filter{
+    display:flex;
+    gap: .5rem;
+}
+#showcase_sub_pending .container .container_title .filter a{
+    text-decoration: none;
+    color: black;
+}
+#showcase_sub_pending .container .container_title .filter a:hover{
+    color: #623ADA;
+}
+#showcase_sub_pending .container .container_title .filter a.active{
+    color: #623ADA;
+}
+#showcase_sub_pending .container .container_body{
+    background: white;
+}
+#showcase_sub_pending .container .container_body .showcase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#showcase_sub_pending .container .container_body .box{
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 1rem;
+    border-bottom: 1px rgb(204, 204, 204) dashed;
+}
+#showcase_sub_pending .container .container_body .box:last-child{
+    border-bottom: none;
+}
+#showcase_sub_pending .container .container_body .box .text{
+    flex: 1;
+}
+#showcase_sub_pending .container .container_body .box .text .name{
+    font-size: 1.5rem;
+}
+#showcase_sub_pending .container .container_body .box .text .salary_range{
+    font-size: 1.2rem;
+}
+#showcase_sub_pending .container .container_body .box .text .posted_at{
+    font-size: 1rem;
+}
+#showcase_sub_pending .container .container_body .box i{
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+#showcase_sub_pending .btn_delete{
+    width: 100%;
+    margin-top: .5rem;
+    height: 50px;
+    color: white;
+    background: #FF5876;
+    border-radius: .5rem;
+}
+#showcase_sub_list .btn_delete:hover{
+    background: #E26178;
+}
+
+
+.company_logo_preview{
+    width: 150px;
+    height: 150px;
+    object-fit: fill;
+    border-radius: 100%;
+}
+input[type=file]{
+    display: none;
+}
+.btn_upload_picture{
+    cursor: pointer;
+    height: 50px;
+    color: white;
+    background: #673DE6;
+    border-radius: .5rem;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_upload_picture:hover{
+    background: #623ADA;
+}
+
+
+
+.navigation_mobile { 
+    display: none;
+ }
+
+  .mobile_icon_profile {
+    display: none;
+}
+
+.hambuger_menu_mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+   #body_page_dashboard {
+        padding: 18px;
+    }
+
+    
+    #body_page_hire .sidebar {
+        display: none;
+    }
+    .header .header_desktop { 
+        display: none;
+     }
+
+     #body_page_hire .showcase {
+      width: 100%;
+    }
+    #showcase_sub_applicants .container .container_body .box .box_buttons {
+        display: block;
+        gap: 0.5rem;
+    }
+    #showcase_sub_applicants .container .container_body .box .box_buttons .button {
+        background: #623ADA;
+        color: white;
+        padding: 1rem 1.5rem;
+        font-size: .9rem;
+        border-radius: 5px;
+        /* display: block; */
+        width: 100%;
+        margin-top: 10px;
+    }
+    .mobile_icon_profile {
+        display: flex;
+    }
+
+    .desktop_icon_profile {
+        display: none;
+    }
+    .header .box {
+         display: block; 
+        gap: 3rem;
+    }
+    .header {
+       
+        padding: 1rem;
+       
+    }
+
+    .hambuger_menu_mobile {
+        display: block;
+        padding-top: 10px;
+    }
+    .hambuger_menu_desktop {
+        display: none;
+    }
+    
+    #body_page_profile .sidebar {
+        display: none;
+    }
+
+    #body_page_accounts .sidebar {
+        display: none;
+    }
+}

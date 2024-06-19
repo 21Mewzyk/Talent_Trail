@@ -1,0 +1,14 @@
+.verify{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    color: white;
+    background: #1B2430;    
+    gap: .5rem;
+}
+.verify a{
+    color: white;
+    background: teal;
+    padding: .3rem 1.7rem;  
+    border-radius: 5px;
+}

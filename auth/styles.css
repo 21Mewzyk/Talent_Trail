@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Poppins:wght@200;400;500&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+span.company_name{
+    color: #112D4E;
+}
+.main{
+    height: 100vh;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: center;
+}
+.header_logo{
+    display: flex;
+    align-items: center;
+    color: #112D4E;
+    gap: .5rem;
+}
+.header_logo img{
+    width: 50px;
+    height: 50px;
+}
+.header_logo p{
+  /*  font-size: 1.2rem;
+    font-weight:500;*/
+}
+/* main_login */
+#main_login{
+    display: flex;
+    flex-direction: column;
+}
+#main_login .body{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main_login .body h1{
+    margin-bottom: 1rem;
+}
+#main_login .body form{
+    display: flex;
+    flex-direction: column;
+    min-width: 500px;
+}
+#main_login .body form .divider{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #112D4E;
+}
+#main_login .body form .divider span{
+    height: 1px;
+    flex: 1;
+    background: rgb(187, 186, 186);
+}
+#main_login .body form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+#main_login .body form input{
+    padding: .4rem;
+    border-radius: .3rem;
+    border: 1px solid black;
+}
+#main_login .body form label{
+    font-size: .8rem;
+}
+#main_login .body form .terms{
+    font-size: .8rem;
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+#main_login .body form .terms a{
+    text-decoration: none;
+    color: #2b27f0;
+}
+#main_login .body form .terms a:hover{
+    text-decoration: underline;
+}
+#main_login .body form .already{
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+#main_login .body form .already a{
+    text-decoration: none;
+    color: #2b27f0;
+}
+#main_login .body form .already a:hover{
+    text-decoration: underline;
+}
+#main_login .body form button{
+    cursor: pointer;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 50px;
+    background: #112D4E;
+    color: white;
+    border: 0;
+    transition: background ease-in .2s;
+}
+#main_login .body form button:hover{
+    background: #112D4E;
+}
+/* step 1 */
+#main_step_1{
+    display: flex;
+    flex-direction: column;
+}
+#main_step_1 .body{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#main_step_1 .body h1{
+    align-self: center;
+    color: #112D4E;
+    margin-bottom: 1rem;
+}
+#main_step_1 .body .divider{
+    color: rgb(172, 170, 170);
+    margin: 0 2rem;
+}
+#main_step_1 .body .showcase{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main_step_1 .body .showcase .type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#main_step_1 .body .showcase .type a{
+    text-align: center;
+    color: #112D4E;
+}
+#main_step_1 .body .showcase .type img{
+    width: 400px;
+    height: 350px;
+}
+#main_step_1 .body .already{
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+#main_step_1 .body .already a{
+    text-decoration: none;
+    color: #2b27f0;
+}
+#main_step_1 .body .already a:hover{
+    text-decoration: underline;
+}
+/* step 2 */
+#main_step_2{
+    display: flex;
+    flex-direction: column;
+}
+#main_step_2 .body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#main_step_2 .body h1{
+    margin-bottom: 1rem;
+}
+#main_step_2 .body form{
+    display: flex;
+    flex-direction: column;
+    min-width: 600px;
+}
+#main_step_2 .body form .divider{
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #112D4E;
+}
+#main_step_2 .body form .divider span{
+    height: 1px;
+    flex: 1;
+    background: rgb(187, 186, 186);
+}
+#main_step_2 .body form .field{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: .5rem;
+}
+#main_step_2 .body form .tb{
+    padding: .4rem;
+    border-radius: .3rem;
+    border: 1px solid black;
+    outline: none;
+}
+#main_step_2 .body form label{
+    font-size: .8rem;
+}
+#main_step_2 .body form .terms{
+    font-size: .8rem;
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+#main_step_2 .body form .terms a{
+    text-decoration: none;
+    color: #2b27f0;
+}
+#main_step_2 .body form .terms a:hover{
+    text-decoration: underline;
+}
+#main_step_2 .body form .already{
+    font-size: .9rem;
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+    text-align: center;
+}
+#main_step_2 .body form .already a{
+    text-decoration: none;
+    color: #2b27f0;
+}
+#main_step_2 .body form .already a:hover{
+    text-decoration: underline;
+}
+#main_step_2 .body form button{
+    cursor: pointer;
+    height: 50px;
+    font-size: 1rem;
+    border-radius: 50px;
+    background: #112D4E;
+    color: white;
+    border: 0;
+    transition: background ease-in .2s;
+}
+#main_step_2 .body form button:hover{
+    background: #016464;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #main_login .body { 
+        padding: 40px;
+    }
+    #main_login .body form {
+        display: flex;
+        flex-direction: column;
+        min-width: 300px;
+    }
+
+    #main_login .body form label {
+         font-size: 2rem; 
+    }
+
+    #main_step_1 .body h1 {
+        text-align: center;
+    }
+
+    #main_step_1 .body .showcase .type img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #F9F7F7;
+  background-size: cover;
+  background-position: center;
+}
+
+.big-border-box {
+  border: 2px solid #3F72AF;
+  border-radius: 10px;
+  padding: 150px 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.small-border-box {
+  border: 2px solid #DBE2EF;
+  border-radius: 20px;
+  width: 450px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  margin: 10px;
+}
+
+.small-border-box {
+  border: 2px solid #DBE2EF;
+  border-radius: 20px;
+  width: 450px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  margin: 10px;
+}
+.image-overlay {
+  margin-bottom: 10px;
+}
+
+.image-size {
+  width: 100px; /* Adjusted image width */
+  height: 100px; /* Adjusted image height */
+}
+
+.radio-label {
+  margin: 10;
+  padding-left: 20px;
+}
+
+label, button {
+  color: black;
+}
+
+.radio-input {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.small-border-box.active {
+  background-color: #E6E2FF;
+  border-color: #3F72AF;
+}
+
+.small-border-box .radio-input {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.small-border-box label {
+  position: relative;
+}
+
+.small-border-box label::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.small-border-box .radio-input:checked + label::before {
+  background-color: #DCD6F7;
+  border-color: #112D4E;
+}
+
+.small-border-box:hover {
+  background-color: #F4EEFF;
+  color: #112D4E;
+}
+
+.header {
+  position: absolute;
+  left: 38%;
+  margin-bottom: 400px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+
+}
+
+
+.create-account-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 505px;
+  display: inline-block;
+  padding: 0.5em 4.7em;
+  border: 0.16em solid #A6B1E1;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #112D4E;
+  text-shadow: 0 0.04em 0.04em rgba(15, 13, 13, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer; /* Add this line to show cursor as a pointer when button is clickable */
+}
+
+.create-account-button:disabled {
+  opacity: 0.5; /* Adjust the opacity for a disabled look */
+  cursor: not-allowed; /* Change cursor for disabled state */
+}
+
+.create-account-button:hover {
+  background-color: #DBE2EF; /* Change background color on hover */
+  color: #112D4E; /* Change text color on hover */
+}
+
+
+.login-account-button {
+  background-color: #112D4E;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 400px;
+  display: inline-block;
+  padding: 0.5em 4.7em;
+  border: 0.16em solid #112D4E;
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  text-shadow: 0 0.04em 0.04em rgba(15, 13, 13, 0.253);
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer; /* Add this line to show cursor as a pointer when button is clickable */
+}
+
+.login-account-button:disabled {
+  opacity: 0.5; /* Adjust the opacity for a disabled look */
+  cursor: not-allowed; /* Change cursor for disabled state */
+}
+
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #F9F7F7;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .big-border-box {
+    border: 2px solid #3F72AF;
+    border-radius: 10px;
+    padding: 150px 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .small-border-box {
+    border: 2px solid #DBE2EF;
+    border-radius: 20px;
+    width: 450px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin: 10px;
+  }
+  
+  .small-border-box {
+    border: 2px solid #DBE2EF;
+    border-radius: 20px;
+    width: 450px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    margin: 10px;
+  }
+  .image-overlay {
+    margin-bottom: 10px;
+  }
+  
+  .image-size {
+    width: 100px; /* Adjusted image width */
+    height: 100px; /* Adjusted image height */
+  }
+  
+  .radio-label {
+    margin: 10;
+    padding-left: 20px;
+  }
+  
+  label, button {
+    color: black;
+  }
+  
+  .radio-input {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .small-border-box.active {
+    background-color: #E6E2FF;
+    border-color: #3F72AF;
+  }
+  
+  .small-border-box .radio-input {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .small-border-box label {
+    position: relative;
+  }
+  
+  .small-border-box label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  .small-border-box .radio-input:checked + label::before {
+    background-color: #DCD6F7;
+    border-color: #112D4E;
+  }
+  
+  .small-border-box:hover {
+    background-color: #F4EEFF;
+    color: #112D4E;
+  }
+  
+  .header {
+    position: absolute;
+    left: 38%;
+    margin-bottom: 400px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+  
+  }
+  
+  
+  .create-account-button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 505px;
+    display: inline-block;
+    padding: 0.5em 4.7em;
+    border: 0.16em solid #A6B1E1;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #112D4E;
+    text-shadow: 0 0.04em 0.04em rgba(15, 13, 13, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer; /* Add this line to show cursor as a pointer when button is clickable */
+  }
+  
+  .create-account-button:disabled {
+    opacity: 0.5; /* Adjust the opacity for a disabled look */
+    cursor: not-allowed; /* Change cursor for disabled state */
+  }
+  
+  .create-account-button:hover {
+    background-color: #DBE2EF; /* Change background color on hover */
+    color: #112D4E; /* Change text color on hover */
+  }
+  
+  
+  .login-account-button {
+    background-color: #112D4E;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 400px;
+    display: inline-block;
+    padding: 0.5em 4.7em;
+    border: 0.16em solid #112D4E;
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0.04em 0.04em rgba(15, 13, 13, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+    cursor: pointer; /* Add this line to show cursor as a pointer when button is clickable */
+  }
+  
+  .login-account-button:disabled {
+    opacity: 0.5; /* Adjust the opacity for a disabled look */
+    cursor: not-allowed; /* Change cursor for disabled state */
+  }
